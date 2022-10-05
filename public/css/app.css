@@ -1,0 +1,56 @@
+.dropdown-menu {
+	z-index: 1035 !important;
+}
+#sched-table tbody td:hover {
+	cursor: pointer;
+
+}
+
+#sched-table tr.past th {
+	background-color: rgba(0,0,0,.075);
+}
+#sched-table tr.now  {
+	background-color: #cff4fc;
+}
+#sched-table tr.past  {
+	filter: opacity(.6);
+}
+
+#details-modal .my {
+	border-left: 3px solid var(--bs-blue);
+}
+#sched-table .my{
+	/*border-left: 3px solid var(--bs-blue);*/
+	color: var(--bs-blue);
+}
+
+#sched-table .my-add-form {
+	border-left: 2px solid var(--bs-blue);
+	border-right: 2px solid var(--bs-blue);
+}
+
+#sched-table .error {
+	color: var(--bs-red);
+	font-weight: bold;
+	border-left: 2px solid var(--bs-red);
+	border-right: 2px solid var(--bs-red);
+}
+#sched-table .exclusive::after, #details-modal .exclusive::after {
+	content: 'w';
+	vertical-align: sub;
+	font-size: smaller;
+}
+
+#details-modal table {
+	vertical-align: middle;
+}
+
+#select-date {
+	position: absolute;
+	bottom: 0;
+	width: 0;
+	height: 0;
+	border: none;
+	filter: opacity(0);
+}
+
